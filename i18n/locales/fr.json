@@ -202,6 +202,7 @@
   "principalEmptyCategoryDescription": "Pas encore de compétences dans cette catégorie.",
   "principalEmptyGenericDescription": "On n'a rien trouvé. Essaie avec d'autres mots ?",
   "authAddressHint": "Entrez votre adresse...",
+  "authCityHint": "Votre ville",
   "authBioFinishButton": "Finalisé !",
   "authForgotPasswordTitle": "Mot de passe oublié ?",
   "authForgotPasswordSubtitle": "Saisis ton adresse e-mail. On t'envoie un lien pour réinitialiser ton mot de passe.",
@@ -345,5 +346,6 @@
 
   "landingComingSoon": "Bientôt disponible",
   "landingFooterTagline": "Échange de compétences de pair-à-pair",
+  "activitiesShowcaseCaption": "Sport, musique, cuisine, informatique... échange tes compétences dans des dizaines de domaines.",
   "authUsernameRequired" : "Nom d'utilisateur requis" 
 }

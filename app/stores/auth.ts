@@ -11,9 +11,28 @@ export const useAuthStore = defineStore('auth', () => {
     token.value = access
   }
 
+  interface SignupPayload {
+    email: string
+    username: string
+    password: string
+    city?: string
+    adress?: string
+    locationLat?: string
+    locationLon?: string
+  }
+
+  async function signup(payload: SignupPayload) {
+    const api = useApi()
+    const { access_token } = await api<{ access_token: string }>('/api/signup', {
+      method: 'POST',
+      body: payload,
+    })
+    token.value = access_token
+  }
+
   function logout() {
     token.value = null
   }
 
-  return { token, isAuthenticated, login, logout }
+  return { token, isAuthenticated, login, signup, logout }
 })
