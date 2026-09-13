@@ -1,0 +1,17 @@
+services:
+  web:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    networks:
+      - traefik-net
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.skillou-web.rule=Host(`skillou.com`) || Host(`www.skillou.com`)"
+      - "traefik.http.routers.skillou-web.entrypoints=websecure"
+      - "traefik.http.routers.skillou-web.tls.certresolver=letsencrypt"
+      - "traefik.http.services.skillou-web.loadbalancer.server.port=3000"
+
+networks:
+  traefik-net:
+    external: true
