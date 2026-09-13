@@ -344,5 +344,6 @@
   "landingCtaDescription": "Inscription sans engagement. {points} points offerts dès la validation, et des partages passionnants à portée de main.",
 
   "landingComingSoon": "Bientôt disponible",
-  "landingFooterTagline": "Échange de compétences de pair-à-pair"
+  "landingFooterTagline": "Échange de compétences de pair-à-pair",
+  "authUsernameRequired" : "Nom d'utilisateur requis" 
 }

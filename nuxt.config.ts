@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       // Base URL of the Django backend API. Overridable via NUXT_PUBLIC_API_BASE.
-      apiBase: 'http://localhost:8000',
+      apiBase: 'http://localhost:8001',
     },
   },
 
